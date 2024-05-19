@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Basic Page with News API</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Add your custom CSS here */
+        #loading-spinner {
+            display: none;
+        }
+
+        .card-img-top {
+            max-height: 200px;
+        }
+
+        .navbar-brand {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <h1>Welcome Latest News Headlines</h1>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Latest News Headlines</h1>
+                <div id="news-container"></div>
+                <div id="loading-spinner" class="text-center mt-3">
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Add your additional content here -->
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget quam nec diam mattis semper.
+                    Fusce vehicula magna nec libero fermentum, non scelerisque orci interdum. Suspendisse potenti.
+                    Vestibulum rutrum neque vitae magna rhoncus, at dapibus arcu semper. </p>
+                <!-- Display individual article details -->
+                <div id="article-details">
+                    <h3>Title: <span id="article-title"></span></h3>
+                    <p>Description: <span id="article-description"></span></p>
+                    <p>Author: <span id="article-author"></span></p>
+                    <img src="" id="article-image" class="urlToImage" alt="">
+                    <p>Published At: <span id="article-published-at"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery (Optional for some components) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- News API Script -->
+    <script src="./index.js"></script>
+
+
+
+</body>
+
+</html>
